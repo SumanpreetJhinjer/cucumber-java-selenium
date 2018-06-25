@@ -8,6 +8,6 @@ Feature: EA login page
     Then I should be able to see "<message>"
 
     Examples: 
-      | userName | password | message |
-      | name1    |        5 | success |
-      | name2    |        7 | Fail    |
+      | userName | password | message   |
+      | name1    |        5 | User Form |
+      | name2    |        7 | User Form |

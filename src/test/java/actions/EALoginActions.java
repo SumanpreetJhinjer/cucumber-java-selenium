@@ -4,23 +4,28 @@ import org.openqa.selenium.WebDriver;
 
 import pageObjects.EALoginPgaeObject;
 
-public class EALoginActions {
+public class EALoginActions extends EALoginPgaeObject {
 	
 
-	public static void enterUserInfo(WebDriver driver,String userName, String password)
+	public EALoginActions(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void enterUserInfo(String userName, String password)
     {
         //Fill username
-        EALoginPgaeObject.txtUserName.sendKeys(userName);
+      txtUserName.sendKeys(userName);
         //Fill password
-        EALoginPgaeObject.txtPassword.sendKeys(password);
+       txtPassword.sendKeys(password);
         
         // return the object of the page navigated to
         //return new EAHomePOM( driver);
         
     }
     
-    public static void login(WebDriver driver) {
+    public static void login() {
    	//Click Login
-    	EALoginPgaeObject.btnLogin.click();
+    	btnLogin.submit();
     }
 }

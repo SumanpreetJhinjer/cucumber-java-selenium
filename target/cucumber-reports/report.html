@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jun 25, 2018 09:09:58 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Jun 25, 2018 11:38:15 AM</span>
 				</a>
 			</li>
 			<li>
@@ -122,7 +122,7 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -137,7 +137,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -152,7 +152,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>8</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>14</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -171,64 +171,126 @@
 				
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>EA login page</span>
-						<span class='test-time'>Jun 25, 2018 09:09:58 AM</span>
+						<span class='test-name'>EA Home page</span>
+						<span class='test-time'>Jun 25, 2018 11:38:16 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenariooutline node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 23s+748ms</span>
+	<span class='duration right label'>0h 0m 34s+834ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
-		<span class="desc-text">Login to EA Page</span>
+		<span class="desc-text">on to EA Home Page</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node scenario pass' status='pass'>
 			
 			<b>Scenario</b>
 			
-			<span class="bdd-step-name">Login to EA Page</span>
+			<span class="bdd-step-name">on to EA Home Page</span>
 			
 				<ul class='steps'>
 					<li test-id='4' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given I browser the EA Login Page</span>
+						<span class="bdd-step-name">Given I am on the EA HOME PAGE for "name1" and "5"</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='5' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When I enter my correct "name1" and "5"</span>
+						<span class="bdd-step-name">When I fill in user form as "Mr.", "S", "Singh", "Jhinjer"</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='6' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I click the login button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='7' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then I should be able to see "success"</span>
+						<span class="bdd-step-name">And I click the save button</span>
 							<div class='pre'>passed</div>
 					</li>
 				</ul>
 		</li>
-		<li test-id='8' class='node scenario pass' status='pass'>
+		<li test-id='7' class='node scenario pass' status='pass'>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">on to EA Home Page</span>
+			
+				<ul class='steps'>
+					<li test-id='8' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given I am on the EA HOME PAGE for "name2" and "7"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='9' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When I fill in user form as "Ms.", "Y", "Kaur", "Chauhan"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='10' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I click the save button</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>EA login page</span>
+						<span class='test-time'>Jun 25, 2018 11:38:51 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenariooutline node' test-id='12' status='pass'>
+	<span class='duration right label'>0h 0m 22s+198ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Login to EA Page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='13' class='node scenario pass' status='pass'>
 			
 			<b>Scenario</b>
 			
 			<span class="bdd-step-name">Login to EA Page</span>
 			
 				<ul class='steps'>
-					<li test-id='9' class='node given pass' status='pass'><b>Given</b>
+					<li test-id='14' class='node given pass' status='pass'><b>Given</b>
 						<span class="bdd-step-name">Given I browser the EA Login Page</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='10' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When I enter my correct "name2" and "7"</span>
+					<li test-id='15' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When I enter my correct "name1" and "5"</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='11' class='node and pass' status='pass'><b>And</b>
+					<li test-id='16' class='node and pass' status='pass'><b>And</b>
 						<span class="bdd-step-name">And I click the login button</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='12' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then I should be able to see "Fail"</span>
+					<li test-id='17' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then I should be able to see "User Form"</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='18' class='node scenario pass' status='pass'>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Login to EA Page</span>
+			
+				<ul class='steps'>
+					<li test-id='19' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given I browser the EA Login Page</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='20' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When I enter my correct "name2" and "7"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='21' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I click the login button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='22' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then I should be able to see "User Form"</span>
 							<div class='pre'>passed</div>
 					</li>
 				</ul>
@@ -272,37 +334,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>1</div>
-				</div>
-			</div>
-			<div class='col s2'>
-				<div class='card-panel r'>
-					Scenarios
 					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
+					Scenarios
+					<div class='panel-lead'>4</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>8</div>
+					<div class='panel-lead'>14</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jun 25, 2018 09:09:58 AM</div>
+					<div class='panel-lead'>Jun 25, 2018 11:38:15 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jun 25, 2018 09:10:22 AM</div>
+			 		<div class='panel-lead'>Jun 25, 2018 11:39:14 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>24,566ms</div>
+					<div class='panel-lead'>58,355ms</div>
 				</div>
 			</div>
 		</div>
@@ -315,7 +377,7 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
+				passParent: 2,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
@@ -323,7 +385,7 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 2,
+				passChild: 4,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -332,7 +394,7 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 8,
+				passGrandChild: 14,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
