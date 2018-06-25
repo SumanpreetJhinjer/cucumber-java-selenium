@@ -16,7 +16,6 @@ import com.cucumber.listener.Reporter;
 @CucumberOptions(
 		features = {"src//test//java//features"},
 	    glue={"stepDefs","utility"},
-		//plugin = {"pretty", "html:target/cucumber-html-report","json:cucumber.json"},
         plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},
 		tags = {}
 		)
