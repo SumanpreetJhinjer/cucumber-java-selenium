@@ -4,9 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
 import pageObjects.EAHomePageObject;
-import pageObjects.EALoginPgaeObject;
 
 public class EAHomeActions extends EAHomePageObject {
+	
 	
 
 	public EAHomeActions(WebDriver driver) {
@@ -16,9 +16,8 @@ public class EAHomeActions extends EAHomePageObject {
 
 	public static void fillUserForm(String title, String initial, String firstName, String middleName)
     {
-        //Fill username
-      new Select(ddlTitleId).selectByVisibleText(title);
-        //Fill password
+        //Fill user details
+       new Select(ddlTitleId).selectByVisibleText(title);
        txtInitial.sendKeys(initial);
        txtFirstName.sendKeys(firstName);
        txtMiddleName.sendKeys(middleName);
