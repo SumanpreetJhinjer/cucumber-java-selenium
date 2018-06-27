@@ -16,12 +16,12 @@ import com.cucumber.listener.Reporter;
 @CucumberOptions(
 		features = {"src//test//java//features"},
 	    glue={"stepDefs","utility"},
-        plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},
+        plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/reports.html"},
 		tags = {}
 		)
 public class RunTest{
 	 public static void writeExtentReport() {
-	        Reporter.loadXMLConfig(new File("config/report.xml"));
+	        Reporter.loadXMLConfig(new File("config/reports.xml"));
 	        Reporter.setSystemInfo("User Name", System.getProperty("user.name"));
 		    Reporter.setSystemInfo("Time Zone", System.getProperty("user.timezone"));
 		    Reporter.setSystemInfo("Machine", 	System.getProperty("os.name"));
